@@ -28,9 +28,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeBankUIAppTheme {
                 SetBarColor(color = MaterialTheme.colorScheme.background)
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
-                }
             }
         }
     }
@@ -50,7 +47,7 @@ class MainActivity : ComponentActivity() {
 fun HomeScreen(){
     Scaffold(
         bottomBar = {
-
+            BottomNavigationBar()
         }
     ) { padding ->
 
